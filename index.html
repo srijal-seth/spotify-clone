@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+</head>
+<link rel="stylesheet" href="styles/utilities.css">
+<link rel="stylesheet" href="styles/style.css">
+
+<body>
+    <div class="container flex">
+        <div class="left bg-black">
+            <div class="close">
+                <img width="25px" src="img/close.svg" alt="">
+            </div>
+            <div class="leftup bg-grey border-radius">
+                <img class="invert spotify" src="img/logo.svg" alt="">
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="leftdown bg-grey m-1 border-radius">
+                <div class="heading-2">
+                    <img class="invert" src="img/library.svg" alt="library">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songsList">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a href="https://www.spotify.com/us/legal/">Legal</a>
+                    <a href="https://www.spotify.com/us/safetyandprivacy/">Safety &amp; Privacy Center</a>
+                    <a href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/us/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/us/legal/privacy-policy/#s3">About Ads</a>
+                    <a href="https://www.spotify.com/us/accessibility/">Accessibility</a>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey border-radius m-1 m-2 ">
+            <div class="nav border-radius">
+                <div class="svg">
+                    <img width="25px" class="invert hamburger" src="img/hamburger.svg" alt="">
+                    <svg width="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <svg width="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+                <h1>Spotify Playlist</h1>
+                <div class="cardContainer">
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <img width="30px" id="previous" src="img/previous.svg" alt="">
+                            <img width="30px" id="play" src="img/play.svg" alt="">
+                            <img width="30px" id="next" src="img/next.svg" alt="">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtimer"></div>
+                            <div class="volume">
+                                <img width="20" src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
